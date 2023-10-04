@@ -1,21 +1,32 @@
 const createResturantHomePage = () => {
     const content = document.querySelector('#content')
-    const pageContent = document.createElement('div')
-    pageContent.classList.add('page-content')
+    const mainContent = document.createElement('div')
+    mainContent.classList.add('main-content', 'page-content')
+    const innerMainTextContent = document.createElement('div')
+    innerMainTextContent.classList.add('text-area')
+    mainContent.appendChild(innerMainTextContent)
+
 
     const image = document.createElement('img')
-    image.src = 'https://i.pinimg.com/564x/6a/58/ed/6a58eda5cea4d65978804ea7a16e9897.jpg'
-    image.height = '300'
-    pageContent.appendChild(image)
+    image.src = '/src/img/home-sushi-rolls.png'
+    image.width = '500'
+    // image.height = '250'
+    mainContent.appendChild(image)
 
     const headline = document.createElement('h1')
-    headline.textContent = 'welcome to our restuarant'
-    pageContent.appendChild(headline)
+    headline.innerHTML = 'Enjoy Delicious' + `<img src="/src/img/home-sushi-title.png" alt="" style="width: 45px" />` + ' Sushi Food'
+    innerMainTextContent.appendChild(headline)
 
     const copy = document.createElement('p')
-    copy.textContent = 'We serve the main Eba in town'
-    pageContent.appendChild(copy)
-    content.appendChild(pageContent)
+    copy.textContent = 'Enjoy a good dinner with the best dishes in the resturant and improve your day'
+    innerMainTextContent.appendChild(copy)
+    content.appendChild(mainContent)
+
+    const orderBtn = document.createElement('button')
+    orderBtn.classList.add('order-btn')
+    orderBtn.textContent = 'Order now'
+    innerMainTextContent.appendChild(orderBtn)
+
 }
 
 export default createResturantHomePage

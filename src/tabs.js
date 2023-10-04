@@ -4,13 +4,21 @@ import createContactPage from "./contact"
 
 
 const createTabs = () => {
+    const header = document.createElement('header')
     const content = document.querySelector('#content')
-    const pageContent = document.createElement('div')
-    pageContent.classList.add('page-content')
+    const pageContent = document.createElement('nav')
+    pageContent.classList.add('nav-content')
+    const restaurantName = document.createElement("h1");
+    restaurantName.classList.add("restaurant-name");
+    restaurantName.textContent = "SUSHIHUB";
 
-    const div1 = document.createElement('div')
-    const div2 = document.createElement('div')
-    const div3 = document.createElement('div')
+    header.classList.add("header")
+    header.style.backgroundColor = 'hsl(19, 100%, 96%)'
+    content.appendChild(header)
+
+    const div1 = document.createElement('button')
+    const div2 = document.createElement('button')
+    const div3 = document.createElement('button')
 
     div1.setAttribute('id', 'home-btn')
     div2.setAttribute('id', 'menu-btn')
@@ -24,10 +32,12 @@ const createTabs = () => {
     div2.textContent = 'Menu'
     div3.textContent = 'Contact'
 
-    document.body.appendChild(content)
-    content.appendChild(div1)
-    content.appendChild(div2)
-    content.appendChild(div3)
+    content.appendChild(header)
+    header.appendChild(restaurantName)
+    header.appendChild(pageContent)
+    pageContent.appendChild(div1)
+    pageContent.appendChild(div2)
+    pageContent.appendChild(div3)
 
     div1.addEventListener('click', () => {
         clearContent()
@@ -45,6 +55,7 @@ const createTabs = () => {
 
 function clearContent() {
     const content = document.querySelector("#content")
+    const header = document.querySelector(".header")
     const pageContent = document.querySelector('.page-content')
     if (pageContent) {
         content.removeChild(pageContent)
