@@ -66,7 +66,7 @@ body {
 
 .restaurant-name {
   text-transform: uppercase;
-  font-family: var(--title-font);
+  font-family: var(--body-font);
 }
 
 .nav-content {
@@ -207,12 +207,12 @@ body {
   padding-inline: 0 4rem;
 }
 
-/* .recently-text-area {
+.recently-text-area {
   font-family: var(--body-font);
   font-size: var(--h1-font-size);
   padding-inline: 0 1.3rem;
   text-align: center;
-} */
+}
 
 .order-btn {
   display: inline-flex;
@@ -227,6 +227,11 @@ body {
   margin-top: 20px;
   font-size: var(--normal-font-size);
   color: white;
+  transition: all 0.4s ease-in;
+}
+
+.order-btn:hover {
+  transform: scale(1.1) translateX(10%);
 }
 
 .p {
@@ -239,6 +244,30 @@ body {
   font-weight: 600;
   font-size: var(--h1-font-size);
   color: var(--first-color);
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 135px auto 20px auto;
+  background-color: var(--text-color-light);
+  padding: 2rem;
+  max-width: 700px;
+}
+
+.contact-div p {
+  /* width: 100%; */
+  padding: 1rem;
+  font-size: var(--h2-font-size);
+  font-family: var(--body-font);
+}
+
+.contact-div img {
+  max-height: 450px;
+  padding: 1rem;
+  opacity: 90%;
 }
 
 .footer {
