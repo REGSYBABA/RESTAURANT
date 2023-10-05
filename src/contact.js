@@ -3,25 +3,22 @@ const createContactPage = () => {
     const pageContent = document.createElement('div')
     pageContent.classList.add('page-content')
 
-    const form = document.createElement('form')
-    form.classList.add('contact-form')
+    const contactDiv = document.createElement('div')
+    contactDiv.classList.add('contact-div')
 
-    const headingInput = document.createElement('input')
-    headingInput.type = 'text'
-    headingInput.placeholder = 'Enter Heading'
-    form.appendChild(headingInput)
+    const phoneNumber = document.createElement('p')
+    phoneNumber.textContent = '📞 123 456 789'
+    contactDiv.appendChild(phoneNumber)
 
-    const addressInput = document.createElement('input')
-    addressInput.type = 'text'
-    headingInput.placeholder = 'Enter Address'
-    form.appendChild(addressInput)
+    const address = document.createElement('p')
+    address.textContent = '🏠 555 Milbourne Street, Ottawa, Canada'
+    contactDiv.appendChild(address)
 
-    const submitBtn = document.createElement('input')
-    submitBtn.type = 'text'
-    submitBtn.value = 'submit'
-    form.appendChild(submitBtn)
-
-    pageContent.appendChild(form)
+    const restaurantLocation = document.createElement('img')
+    restaurantLocation.src = '/src/img/restaurant-location.png'
+    restaurantLocation.alt = 'SushiHub restaurant location'
+    contactDiv.appendChild(restaurantLocation)
+    pageContent.append(contactDiv)
     content.appendChild(pageContent)
 }
 
