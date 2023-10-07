@@ -75,6 +75,12 @@ const createResturantHomePage = () => {
     const githubLink = document.createElement("a");
     githubLink.href = "https://github.com/regsybaba";
     footer.appendChild(githubLink)
+
+    const githubIcon = document.createElement("i");
+    githubIcon.classList.add("fa-brands");
+    githubIcon.classList.add("fa-github");
+    githubLink.appendChild(githubIcon)
+
     pageContent.appendChild(footer)
 
 }
