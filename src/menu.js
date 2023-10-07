@@ -120,6 +120,24 @@ const createMenus = () => {
     orderBtn.innerHTML = 'Order now ' + `<i class="fa-solid fa-arrow-right"></i>`
     innerMainTextContent.appendChild(orderBtn)
 
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+
+    const copyright = document.createElement("p");
+    copyright.textContent = `Copyright © ${new Date().getFullYear()} Regha`;
+    footer.appendChild(copyright)
+
+    const githubLink = document.createElement("a");
+    githubLink.href = "https://github.com/regsybaba";
+    footer.appendChild(githubLink)
+
+    const githubIcon = document.createElement("i");
+    githubIcon.classList.add("fa-brands");
+    githubIcon.classList.add("fa-github");
+    githubLink.appendChild(githubIcon)
+
+
+
     pageContent.appendChild(headingDiv)
     mainContent.appendChild(popularDishes)
     mainContent.appendChild(popularDishes2)
@@ -127,6 +145,7 @@ const createMenus = () => {
     popularDishes.appendChild(popDishTextDiv)
     pageContent.appendChild(mainContent)
     pageContent.appendChild(recentlyAdded)
+    pageContent.appendChild(footer)
     content.appendChild(pageContent)
 }
 
