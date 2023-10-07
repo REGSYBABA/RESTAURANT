@@ -13,7 +13,8 @@ const createTabs = () => {
     restaurantName.textContent = "SUSHIHUB";
 
     header.classList.add("header")
-    header.style.backgroundColor = 'hsl(19, 100%, 96%)'
+    // header.style.backgroundColor = 'hsl(19, 100%, 96%)'
+    header.style.backgroundColor = 'transparent'
     content.appendChild(header)
 
     const div1 = document.createElement('button')
