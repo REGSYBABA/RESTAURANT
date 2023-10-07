@@ -20,6 +20,7 @@ const createContactPage = () => {
     contactDiv.appendChild(restaurantLocation)
     pageContent.append(contactDiv)
     content.appendChild(pageContent)
+
 }
 
 export default createContactPage
