@@ -55,7 +55,7 @@ const createResturantHomePage = () => {
     innerMainTextContent2.appendChild(abouText)
 
     const headline2 = document.createElement('h1')
-    headline2.innerHTML = 'We Provide' + `<img src="/src/img/about-sushi-title.png" alt="Small Sushi" style="width: 45px" />` + 'Healthy Food'
+    headline2.innerHTML = 'We Provide' + `<img src="./src/img/about-sushi-title.png" alt="Small Sushi" style="width: 45px" />` + 'Healthy Food'
     innerMainTextContent2.appendChild(headline2)
 
     const copy2 = document.createElement('p')
