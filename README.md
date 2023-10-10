@@ -14,3 +14,7 @@ It also involved us playing with DOM and a whole lof of js appending. It is also
 - HTML
 - CSS
 - WEBPACK BUNDLER
+
+# HOME PAGE  
+![Screen Shot 2023-10-10 at 11 13 51](https://github.com/REGSYBABA/RESTAURANT/assets/112079687/b36e9def-f860-40eb-90d8-036a38c04d22)
+The above image shows the other buttons for navigating to other tabs on the website
