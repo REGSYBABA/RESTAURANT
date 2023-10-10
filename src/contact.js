@@ -15,7 +15,7 @@ const createContactPage = () => {
     contactDiv.appendChild(address)
 
     const restaurantLocation = document.createElement('img')
-    restaurantLocation.src = '/src/img/restaurant-location.png'
+    restaurantLocation.src = './dist/img/restaurant-location.png'
     restaurantLocation.alt = 'SushiHub restaurant location'
     contactDiv.appendChild(restaurantLocation)
     pageContent.append(contactDiv)
